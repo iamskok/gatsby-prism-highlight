@@ -1,0 +1,50 @@
+pre[class*="language-"] {
+	&.line-numbers {
+		position: relative;
+		padding-left: 55px;
+		counter-reset: linenumber;
+
+		> code {
+			position: relative;
+			white-space: inherit;
+		}
+	}
+}
+
+.line-numbers {
+	.line-numbers-rows {
+		user-select: none;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: -55px;
+		width: 40px;
+		font-size: 100%;
+		letter-spacing: -1px;
+		border-right: 1px solid $comment;
+	}
+}
+
+.line-numbers-rows {
+	> span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+
+		&:last-child {
+			&:before {
+				border-bottom: none;
+			}
+		}
+
+		&:before {
+			content: counter(linenumber);
+			display: block;
+			min-width: 40px;
+			color: rgba($foreground, 0.25);
+			text-align: center;
+			line-height: 23px;
+			border-bottom: 1px solid $comment;
+		}
+	}
+}

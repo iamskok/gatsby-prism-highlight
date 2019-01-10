@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-prism-highlight",
+  "version": "0.1.9",
+  "description": "Dracula syntax highlighting theme for Gatsby",
+  "main": "lib/styles.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamskok/gatsby-prism-highlight.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-remark-prismjs",
+    "prism",
+    "prism-line-numbers",
+    "prism-line-highlight",
+    "dark-theme",
+    "dracula-theme",
+    "syntax-highlighting"
+  ],
+  "author": "Vladimir Skok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamskok/gatsby-prism-highlight/issues"
+  },
+  "homepage": "https://github.com/iamskok/gatsby-prism-highlight#readme"
+}
