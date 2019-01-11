@@ -1,7 +1,7 @@
 pre[class*="language-"] {
 	&.line-numbers {
 		position: relative;
-		padding-left: 55px;
+		padding-left: $line-numbers-padding-left;
 		counter-reset: linenumber;
 
 		> code {
@@ -17,11 +17,10 @@ pre[class*="language-"] {
 		pointer-events: none;
 		position: absolute;
 		top: 0;
-		left: -55px;
-		width: 40px;
-		font-size: 100%;
-		letter-spacing: -1px;
-		border-right: 1px solid $comment;
+		left: $line-numbers-rows-left;
+		font-size: $line-numbers-rows-font-size;
+		letter-spacing: $line-numbers-rows-letter-spacing;
+		border-right: $line-numbers-rows-border-bottom $theme-comment;
 	}
 }
 
@@ -40,11 +39,11 @@ pre[class*="language-"] {
 		&:before {
 			content: counter(linenumber);
 			display: block;
-			min-width: 40px;
-			color: rgba($foreground, 0.25);
-			text-align: center;
-			line-height: 23px;
-			border-bottom: 1px solid $comment;
+			min-width: $line-numbers-rows-min-width;
+			color: rgba($theme-foreground, $line-numbers-rows-opacity);
+			text-align: $line-numbers-rows-text-align;
+			line-height: $line-numbers-rows-line-height;
+			border-bottom: $line-numbers-rows-border-bottom $theme-comment;
 		}
 	}
 }

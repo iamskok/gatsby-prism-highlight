@@ -1,9 +1,9 @@
 .gatsby-highlight {
 	overflow: auto;
-	margin: 15px 0;
-	background-color: $background;
-	border: 3px solid rgba($comment, 1);
-	border-radius: 5px;
+	margin: $line-highlight-margin 0;
+	background-color: $theme-background;
+	border: $line-highlight-border $theme-comment;
+	border-radius: $line-highlight-border-radius;
 }
 
 .gatsby-highlight pre[class*="language-"] {
@@ -11,15 +11,15 @@
 	float: left;
 	min-width: 100%;
 	margin: 0;
-	padding-left: 55px;
+	padding-left: $line-highlight-padding-left;
 	background-color: transparent;
-	border-radius: 5px;
+	border-radius: $line-highlight-border-radius;
 }
 
 .gatsby-highlight-code-line {
 	display: block;
-	margin: 0 -15px;
-	padding: 0 12px;
-	border-left: 3px solid $cyan;
-	background-color: rgba($cyan, 0.25);
+	margin: 0 $line-highlight-code-line-margin;
+	padding: 0 $line-highlight-code-line-padding;
+	border-left: $line-highlight-code-line-border $theme-cyan;
+	background-color: rgba($theme-cyan, $line-highlight-code-line-opacity);
 }

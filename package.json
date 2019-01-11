@@ -1,6 +1,6 @@
 {
   "name": "gatsby-prism-highlight",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Dracula syntax highlighting theme for Gatsby",
   "main": "lib/styles.scss",
   "scripts": {
